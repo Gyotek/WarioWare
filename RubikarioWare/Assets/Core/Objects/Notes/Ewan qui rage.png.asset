@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086a0a0b1c2151d419557823d35178ef, type: 3}
+  m_Name: Ewan qui rage.png
+  m_EditorClassIdentifier: 
+  to: {fileID: 11400000}
+  line: 12
+  date: 13/13/666
+  commentary: "C'est pas possible d'\xEAtre une patate"
+  from: Ewan
+  seen: 0
