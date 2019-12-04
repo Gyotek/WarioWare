@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2fcdcfd9d60bfe4c89b024ff6caf274, type: 3}
   m_Name: NomDeVotreJeu ID
   m_EditorClassIdentifier: 
-  gameName: 
+  gameName: Dinventoryablo
   description: 
-  verb: 
+  verb: Loot !
   serieConstraints: 0
   scene:
-    m_SceneAsset: {fileID: 0}
-    m_SceneName: 
-  designer: 
-  programmer: 
+    m_SceneAsset: {fileID: 102900000, guid: 532976b2b6fe097418357f786ff75250, type: 3}
+    m_SceneName: TestScene
+  designer: Alexandre Courtin
+  programmer: Arthur Herbreteau
   thumbnail: {fileID: 0}
   inputSprite: {fileID: 0}
   data: {}
