@@ -2,26 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spikes : MonoBehaviour
+namespace Game.ScratchyBird
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Spikes : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.GetComponent<Flying>())
+        // Start is called before the first frame update
+        void Start()
         {
-            collision.gameObject.GetComponent<Flying>().velocity = 0;
-            collision.gameObject.GetComponent<Move>().speed = 0;
+
         }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
+
     }
 }

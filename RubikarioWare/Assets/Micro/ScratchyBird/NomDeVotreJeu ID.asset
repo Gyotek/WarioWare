@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: NomDeVotreJeu ID
   m_EditorClassIdentifier: 
   gameName: ScratchyBird
-  description: 
+  description: Guidez Scratchy jusqu'aux piques pour qu'il puisse s'empaler en paix
   verb: Impale !
   serieConstraints: 0
   scene:
-    m_SceneAsset: {fileID: 0}
-    m_SceneName: 
+    m_SceneAsset: {fileID: 102900000, guid: 6a26ecac61a4ee6468d76a829c168b85, type: 3}
+    m_SceneName: TestScene
   designer: Adrien Dourgnon
   programmer: Arthur Herbreteau
   thumbnail: {fileID: 0}
