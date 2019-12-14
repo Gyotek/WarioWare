@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: NomDeVotreJeu ID
   m_EditorClassIdentifier: 
   gameName: Dinventoryablo
-  description: 
+  description: Il faut rapidement ranger son inventaire pour pouvoir y placer son
+    loot
   verb: Loot !
   serieConstraints: 0
   scene:

@@ -1,48 +1,89 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 
-public class DragAndDrop : MonoBehaviour
+
+namespace Game.Dinventoryablo
 {
-
-    private Color mouseOverColor = Color.gray;
-    private Color originalColor = Color.white;
-    private bool dragging = false;
-    private float distance;
-    [SerializeField] private Transform parentObjectTr;
-
-    void OnMouseEnter()
+    public class DragAndDrop : MonoBehaviour
     {
-        Debug.Log("MouseEnter : " + this.gameObject.name);
-        GetComponent<SpriteRenderer>().color = mouseOverColor;
-    }
 
-    void OnMouseExit()
-    {
-        Debug.Log("MouseExit : " + this.gameObject.name);
-        GetComponent<SpriteRenderer>().color = originalColor;
-    }
+        private Color mouseOverColor = Color.gray;
+        private Color originalColor = Color.white;
+        private bool dragging = false;
+        private float distance;
+        private Collider2D[] colliders;
+        private Vector2 savedPos;
 
-    void OnMouseDown()
-    {
-        Debug.Log("MouseDown");
-        //distance = Vector3.Distance(transform.position, Camera.main.transform.position);
-        dragging = true;
-    }
+        [SerializeField] VoidEvent OnItemPickedUp = default;
+        [SerializeField] private GameObject Inventory;
 
-    void OnMouseUp()
-    {
-        Debug.Log("MouseUp");
-        dragging = false;
-    }
-
-    void Update()
-    {
-        if (dragging)
+        private void Start()
         {
-            Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            pos.z = 0;
-            parentObjectTr.position = pos;
+            SavePos();
+            colliders = GetComponents<Collider2D>();
+        }
+
+        public void SavePos()
+        {
+            savedPos = transform.position;
+        }
+
+        void OnMouseEnter()
+        {
+            GetComponent<SpriteRenderer>().color = mouseOverColor;
+        }
+
+        void OnMouseExit()
+        {
+            GetComponent<SpriteRenderer>().color = originalColor;
+        }
+
+        void OnMouseDown()
+        {
+            Debug.Log("Item picked");
+            OnItemPickedUp.Raise();
+            for (int i = 0; i < colliders.Length; i ++)
+            {
+                colliders[i].enabled = false;
+            }
+
+            dragging = true;
+        }
+
+        private void OnTriggerStay2D(Collider2D collision)
+        {
+            transform.position = savedPos;
+        }
+
+        void OnMouseUp()
+        {
+            Debug.Log("Item droped");
+            dragging = false;
+
+            for (int i = 0; i < colliders.Length; i++)
+            {
+                colliders[i].enabled = true;
+            }
+
+            if (Inventory.GetComponent<InventoryManager>().WichSquareIsThis(transform.position) == Vector2.zero)
+            {
+                transform.position = savedPos;
+            }
+            else
+            {
+                transform.position = Inventory.GetComponent<InventoryManager>().WichSquareIsThis(transform.position);
+            }
+        }
+        void Update()
+        {
+            if (dragging)
+            {
+                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                pos.z = 0;
+                transform.position = pos;
+            }
         }
     }
 }
