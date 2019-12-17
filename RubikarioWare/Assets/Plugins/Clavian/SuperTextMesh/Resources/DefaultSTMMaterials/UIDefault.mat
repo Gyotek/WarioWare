@@ -97,6 +97,6 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0.21857011, g: 0.22193381, b: 0.24518102, a: 1}
+    - _OutlineColor: {r: 0.21856076, g: 0.22192445, b: 0.24517167, a: 1}
     - _ShadowAngle3: {r: 1, g: -1, b: 0, a: 1}
     - _ShadowColor: {r: 1, g: 0, b: 0, a: 1}

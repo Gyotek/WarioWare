@@ -18,6 +18,7 @@ namespace Game.Dinventoryablo
 
         [SerializeField] VoidEvent OnItemPickedUp = default;
         [SerializeField] private GameObject Inventory;
+        [SerializeField] private Camera myCamera;
 
         private void Start()
         {
@@ -54,6 +55,7 @@ namespace Game.Dinventoryablo
 
         private void OnTriggerStay2D(Collider2D collision)
         {
+            Debug.Log(gameObject.name + " Collide with " + collision.gameObject.name);
             transform.position = savedPos;
         }
 
@@ -80,7 +82,7 @@ namespace Game.Dinventoryablo
         {
             if (dragging)
             {
-                Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector3 pos = myCamera.ScreenToWorldPoint(Input.mousePosition);
                 pos.z = 0;
                 transform.position = pos;
             }

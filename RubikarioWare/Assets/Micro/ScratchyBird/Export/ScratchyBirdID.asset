@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fcdcfd9d60bfe4c89b024ff6caf274, type: 3}
-  m_Name: NomDeVotreJeu ID
+  m_Name: ScratchyBirdID
   m_EditorClassIdentifier: 
   gameName: ScratchyBird
   description: Guidez Scratchy jusqu'aux piques pour qu'il puisse s'empaler en paix
   verb: Impale !
   serieConstraints: 0
   scene:
-    m_SceneAsset: {fileID: 102900000, guid: 6a26ecac61a4ee6468d76a829c168b85, type: 3}
-    m_SceneName: TestScene
+    m_SceneAsset: {fileID: 102900000, guid: 5646d09e6763d6a40bceafe9ddf19507, type: 3}
+    m_SceneName: ScratchyBirdScene
   designer: Adrien Dourgnon
   programmer: Arthur Herbreteau
   thumbnail: {fileID: 0}

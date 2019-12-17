@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2fcdcfd9d60bfe4c89b024ff6caf274, type: 3}
-  m_Name: NomDeVotreJeu ID
+  m_Name: DinventoryabloID
   m_EditorClassIdentifier: 
   gameName: Dinventoryablo
   description: Il faut rapidement ranger son inventaire pour pouvoir y placer son
@@ -18,8 +18,8 @@ MonoBehaviour:
   verb: Loot !
   serieConstraints: 0
   scene:
-    m_SceneAsset: {fileID: 102900000, guid: 532976b2b6fe097418357f786ff75250, type: 3}
-    m_SceneName: TestScene
+    m_SceneAsset: {fileID: 102900000, guid: 412990d1657ffec46839402e738375b9, type: 3}
+    m_SceneName: Dinventoryablo
   designer: Alexandre Courtin
   programmer: Arthur Herbreteau
   thumbnail: {fileID: 0}
