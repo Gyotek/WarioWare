@@ -6,7 +6,7 @@ using UnityAtoms;
 
 namespace Game.Dinventoryablo
 {
-    public class DragAndDrop : MonoBehaviour
+    public class LootDragAndDrop : MonoBehaviour
     {
 
         private Color mouseOverColor = Color.gray;
@@ -23,27 +23,8 @@ namespace Game.Dinventoryablo
         private void Start()
         {
             colliders = GetComponents<Collider2D>();
-            Debug.Log(transform.position);
+
             SavePos();
-            InitPos();
-            SavePos();
-            Debug.Log(transform.position);
-        }
-
-        public void InitPos()
-        {
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                colliders[i].enabled = false;
-            }
-
-            transform.position = Inventory.GetComponent<InventoryManager>().WichSquareIsThis(transform.position);
-
-            for (int i = 0; i < colliders.Length; i++)
-            {
-                colliders[i].enabled = true;
-            }
-
         }
 
         public void SavePos() =>
@@ -52,15 +33,11 @@ namespace Game.Dinventoryablo
         public void ResetPos() =>
             transform.position = savedPos;
 
-        void OnMouseEnter()
-        {
+        void OnMouseEnter() =>
             GetComponent<SpriteRenderer>().color = mouseOverColor;
-        }
 
-        void OnMouseExit()
-        {
+        void OnMouseExit() =>
             GetComponent<SpriteRenderer>().color = originalColor;
-        }
 
         void OnMouseDown()
         {
@@ -76,7 +53,6 @@ namespace Game.Dinventoryablo
 
         private void OnTriggerStay2D(Collider2D collision)
         {
-            Debug.Log(gameObject.name + " Collide with " + collision.gameObject.name);
             ResetPos();
         }
 
