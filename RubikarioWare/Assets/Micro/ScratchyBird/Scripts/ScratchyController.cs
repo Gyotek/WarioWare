@@ -1,12 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 
 namespace Game.ScratchyBird
 {
     public class ScratchyController : MonoBehaviour
     {
         private Rigidbody2D rb;
+
+        [SerializeField] private VoidEvent onImpale;
+        [SerializeField] private VoidEvent onImpact;
 
         public float velocity = 1.4f;
         public float speed;
@@ -45,9 +49,9 @@ namespace Game.ScratchyBird
             Stop();
 
             if (collision.gameObject.GetComponent<Spikes>())
-                Debug.Log("WIN");
+                onImpale.Raise();
             else
-                Debug.Log("LOOSE");
+                onImpact.Raise();
 
         }
     }

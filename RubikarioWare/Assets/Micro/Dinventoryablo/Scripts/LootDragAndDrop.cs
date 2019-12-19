@@ -13,10 +13,15 @@ namespace Game.Dinventoryablo
         private Color originalColor = Color.white;
         private bool dragging = false;
         private float distance;
-        private Collider2D[] colliders;
         private Vector2 savedPos;
 
+        private Collider2D[] colliders;
+
+        private bool isStillInPlace = false;
+
         [SerializeField] VoidEvent OnItemPickedUp = default;
+        [SerializeField] VoidEvent OnWin = default;
+
         [SerializeField] private GameObject Inventory;
         [SerializeField] private Camera myCamera;
 
@@ -53,6 +58,7 @@ namespace Game.Dinventoryablo
 
         private void OnTriggerStay2D(Collider2D collision)
         {
+            isStillInPlace = false;
             ResetPos();
         }
 
@@ -73,8 +79,18 @@ namespace Game.Dinventoryablo
             else
             {
                 transform.position = Inventory.GetComponent<InventoryManager>().WichSquareIsThis(transform.position);
+                isStillInPlace = true;
+                StartCoroutine(IsStillInPlaceCoroutine());
             }
         }
+
+        IEnumerator IsStillInPlaceCoroutine()
+        {
+            yield return new WaitForSeconds(0.1f);
+            if (isStillInPlace)
+                OnWin.Raise();
+        }
+
         void Update()
         {
             if (dragging)

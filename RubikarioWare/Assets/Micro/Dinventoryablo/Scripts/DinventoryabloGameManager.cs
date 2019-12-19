@@ -10,6 +10,8 @@ namespace Game.Dinventoryablo
         [SerializeField] private string actionVerb;
         [SerializeField] private int actionVerbDuration;
 
+        [SerializeField] private GameObject[] listeLD;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -23,6 +25,13 @@ namespace Game.Dinventoryablo
 
         protected override void OnActionVerbDisplayEnd()
         {
+            int randomLD = Random.Range(0, 2);
+            if (Macro.Difficulty == 2)
+                randomLD += 3;
+            else if (Macro.Difficulty == 3)
+                randomLD += 6;
+
+            listeLD[randomLD].SetActive(true);
             Macro.StartTimer(10, true);
         }
 

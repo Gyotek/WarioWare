@@ -392,6 +392,8 @@ GameObject:
   m_Component:
   - component: {fileID: 218838412}
   - component: {fileID: 218838413}
+  - component: {fileID: 218838415}
+  - component: {fileID: 218838414}
   m_Layer: 0
   m_Name: ScratchyBird
   m_TagString: Untagged
@@ -431,6 +433,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionVerb: Impale !
   actionVerbDuration: 4
+--- !u!114 &218838414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218838411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267251ce805f8403d971ed00a6d58cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: When Scratchy hit a pipe (loose)
+  _event: {fileID: 11400000, guid: cc4544f9c0bc21d4b8edc6f10c1cbd81, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 218838413}
+        m_MethodName: FinishGame
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _actionResponses: []
+--- !u!114 &218838415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218838411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 267251ce805f8403d971ed00a6d58cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _developerDescription: When scratchy impale himself (win)
+  _event: {fileID: 11400000, guid: dce66032cbf419140b89052b6fa01ab8, type: 2}
+  _unityEventResponse:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 218838413}
+        m_MethodName: FinishGame
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  _actionResponses: []
 --- !u!1 &384228727
 GameObject:
   m_ObjectHideFlags: 0
@@ -1519,6 +1579,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5808b5264942c664991c2a1e702849c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onImpale: {fileID: 11400000, guid: dce66032cbf419140b89052b6fa01ab8, type: 2}
+  onImpact: {fileID: 11400000, guid: cc4544f9c0bc21d4b8edc6f10c1cbd81, type: 2}
   velocity: 3.4
   speed: 1.5
 --- !u!1 &1577053245
@@ -1734,6 +1796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Intermediary
+      objectReference: {fileID: 0}
+    - target: {fileID: 1932676726647852407, guid: ae621a25a1f42e249be64cdcc0264f96,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1932676726647852405, guid: ae621a25a1f42e249be64cdcc0264f96,
         type: 3}

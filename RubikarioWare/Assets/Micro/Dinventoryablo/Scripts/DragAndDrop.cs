@@ -23,11 +23,7 @@ namespace Game.Dinventoryablo
         private void Start()
         {
             colliders = GetComponents<Collider2D>();
-            Debug.Log(transform.position);
             SavePos();
-            InitPos();
-            SavePos();
-            Debug.Log(transform.position);
         }
 
         public void InitPos()
@@ -62,6 +58,8 @@ namespace Game.Dinventoryablo
             GetComponent<SpriteRenderer>().color = originalColor;
         }
 
+
+
         void OnMouseDown()
         {
             Debug.Log("Item picked");
@@ -70,7 +68,7 @@ namespace Game.Dinventoryablo
             {
                 colliders[i].enabled = false;
             }
-
+            SavePos();
             dragging = true;
         }
 

@@ -90,7 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 769501297866540274}
   - component: {fileID: 769501297866540275}
-  - component: {fileID: 769501297866540272}
+  - component: {fileID: 1007493337143917716}
   - component: {fileID: 769501297866540273}
   - component: {fileID: 769501297866540278}
   - component: {fileID: 769501297866540237}
@@ -108,9 +108,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 769501297866540279}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.581591, y: -5.1636424, z: 7.325}
-  m_LocalScale: {x: 0.64, y: 0.64, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_Children:
   - {fileID: 769501296196831766}
   m_Father: {fileID: 0}
@@ -165,7 +165,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &769501297866540272
+--- !u!114 &1007493337143917716
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -244,7 +244,7 @@ MonoBehaviour:
   _unityEventResponse:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 769501297866540272}
+      - m_Target: {fileID: 1007493337143917716}
         m_MethodName: SavePos
         m_Mode: 1
         m_Arguments:
