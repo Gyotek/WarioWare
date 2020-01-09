@@ -18,6 +18,7 @@ namespace Game.ScratchyBird
         // Start is called before the first frame update
         void Start()
         {
+            
             rb = GetComponent<Rigidbody2D>();
         }
 
@@ -25,7 +26,7 @@ namespace Game.ScratchyBird
         void Update()
         {
             Fly();
-            Move();
+            //Move();
         }
 
         private void Move()
