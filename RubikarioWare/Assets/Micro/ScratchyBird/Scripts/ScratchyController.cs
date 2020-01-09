@@ -41,6 +41,7 @@ namespace Game.ScratchyBird
         }
          private void Stop()
         {
+            rb.simulated = false;
             velocity = 0;
             speed = 0;
         }
