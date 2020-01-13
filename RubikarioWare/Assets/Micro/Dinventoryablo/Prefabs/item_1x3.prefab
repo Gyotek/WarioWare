@@ -77,16 +77,6 @@ PrefabInstance:
       propertyPath: myCamera
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 769501297866540273, guid: 5bc517e0478d2d440b46b5d13984d664,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 769501297866540273, guid: 5bc517e0478d2d440b46b5d13984d664,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -1
-      objectReference: {fileID: 0}
     - target: {fileID: 769501296196831766, guid: 5bc517e0478d2d440b46b5d13984d664,
         type: 3}
       propertyPath: m_LocalScale.y
@@ -97,5 +87,36 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 769501297866540275, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 769501297866540275, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 769501297866540273, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 769501297866540273, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4509628961955098570, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5881295625378472990, guid: 5bc517e0478d2d440b46b5d13984d664,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b0edd10b4861dd747a81473f2d317b3b,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5bc517e0478d2d440b46b5d13984d664, type: 3}
