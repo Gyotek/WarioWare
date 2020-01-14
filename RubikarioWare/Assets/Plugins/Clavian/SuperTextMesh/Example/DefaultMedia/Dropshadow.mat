@@ -83,7 +83,7 @@ Material:
     - _SDFMode: 0
     - _ShadowAngle: 137
     - _ShadowCutoff: 0.5
-    - _ShadowDistance: 0.1
+    - _ShadowDistance: 1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1

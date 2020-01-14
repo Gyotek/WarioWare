@@ -2,16 +2,34 @@
 
 namespace Game.#PROJECTNAME#
 {
-    public class #SCRIPTNAME# : MonoBehaviour
+    public class #SCRIPTNAME# : MicroMonoBehaviour
     {
-        private void Start()
+	
+		// Evenement qui se declenche au beat suivant l'appel de la methode DisplayActionVerb()
+        protected override void OnActionVerbDisplayEnd()
         {
-			
+            
         }
 
-        private void Update()
+		// Evenement qui se declenche au beat suivant l'appel de la methode StartGame()
+		// C'est le début de votre micro-jeu !
+		protected override void OnGameStart()
         {
-			
+            
         }
+
+		// Evenement qui se declenche a chaque beat
+		protected override void OnBeat()
+        {
+            
+        }
+
+		// Evenement qui se declenche lorsque le timer arrive a 0
+		protected override void OnTimerEnd()
+        {
+            
+        }
+
+
     }
 }

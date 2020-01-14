@@ -16,4 +16,154 @@ MonoBehaviour:
   defaultEditorBehaviour: 11
   processMouseMoveInInspector: 1
   drawingConfig:
-    configs: []
+    configs:
+    - DrawnTypeName: UnityAtoms.DebugAction, Assembly-CSharp
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.InverseLerpParameter, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterEvent, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterResetTrigger, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterSetActive, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterSetBool, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterSetFloat, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnEnterSetTrigger, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnExitSetBool, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.OnExitSetFloat, StateMachine
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.Atoms.GameEventListenerTrigger, StateMachine.Atoms
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.Atoms.OnEnterRaiseEvent, StateMachine.Atoms
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.Atoms.OnUpdateSetBool, StateMachine.Atoms
+      EditorTypeName: 
+    - DrawnTypeName: StateMachine.Atoms.OnUpdateSetFloat, StateMachine.Atoms
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.BoolBoolEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.BoolBoolListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.BoolConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.BoolList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.BoolListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Collider2DCollider2DEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Collider2DCollider2DListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Collider2DConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Collider2DList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Collider2DListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColliderColliderEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColliderColliderListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColliderConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColliderList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColliderListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColorColorEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColorColorListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColorConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColorList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.ColorListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.FloatConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.FloatFloatEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.FloatFloatListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.FloatList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.FloatListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.GameObjectConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.GameObjectGameObjectEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.GameObjectGameObjectListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.GameObjectList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.GameObjectListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.IntConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.IntIntEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.IntIntListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.IntList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.IntListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetBoolVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetCollider2DVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetColliderVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetColorVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetFloatVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetGameObjectVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetIntVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetStringVariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetVector2VariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.SetVector3VariableValue, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.StringConstant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.StringList, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.StringListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.StringStringEvent, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.StringStringListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector2Constant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector2List, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector2Listener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector2Vector2Event, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector2Vector2Listener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector3Constant, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector3List, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector3Listener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector3Vector3Event, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.Vector3Vector3Listener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 
+    - DrawnTypeName: UnityAtoms.VoidListener, MamboJamboStudios.UnityAtomsCore.Runtime
+      EditorTypeName: 

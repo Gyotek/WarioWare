@@ -9,19 +9,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2fcdcfd9d60bfe4c89b024ff6caf274, type: 3}
+  m_Script: {fileID: 11500000, guid: 8ad708abf202d5145966ede5b30b588b, type: 3}
   m_Name: DinventoryabloID
   m_EditorClassIdentifier: 
-  gameName: Dinventoryablo
-  description: Il faut rapidement ranger son inventaire pour pouvoir y placer son
-    loot
-  verb: Loot !
-  serieConstraints: 0
+  titles:
+  - Dinventoryablo
+  - Dinventoryablo
+  descriptions:
+  - "Il faut placer l'objet de l'inventaire \xE0 droite dans l'inventaire \xE0 gauche.\nPour
+    ceci il faut r\xE9organiser son inventaire en drag'n'dropant les items pour faire
+    de la place. "
+  - 'You have to take the item in the right inventory and place it in the left inventory.
+
+    To do that you''ll need to drag''n''drop items to order the left inventory to
+    maque a place for th'
+  actionVerbs:
+  - Loot!
+  - Loot!
   scene:
-    m_SceneAsset: {fileID: 102900000, guid: 412990d1657ffec46839402e738375b9, type: 3}
-    m_SceneName: Dinventoryablo
-  designer: Alexandre Courtin
-  programmer: Arthur Herbreteau
+    sceneAsset: {fileID: 102900000, guid: 412990d1657ffec46839402e738375b9, type: 3}
+    sceneName: Dinventoryablo
   thumbnail: {fileID: 0}
-  inputSprite: {fileID: 0}
-  data: {}
+  designer:
+  - Alexandre
+  - Courtin
+  developer:
+  - Arthur
+  - Herbreteau
+  inputs: 1
+  rythmConstraints: 0
+  associatedRivals: 65
+  theme: 1

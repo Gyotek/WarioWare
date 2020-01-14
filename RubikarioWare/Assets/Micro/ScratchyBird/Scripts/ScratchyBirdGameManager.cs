@@ -1,11 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityAtoms;
 
 namespace Game.ScratchyBird
 {
     public class ScratchyBirdGameManager : MicroMonoBehaviour
     {
+        public static ScratchyBirdGameManager instance;
+        private void Awake() { instance = this; }
+
+        [SerializeField] private VoidEvent onStartFlying;
+
         private bool gameEnded = false;
         [SerializeField] private string actionVerb;
         [SerializeField] private int actionVerbDuration;
@@ -23,6 +29,7 @@ namespace Game.ScratchyBird
 
         protected override void OnActionVerbDisplayEnd()
         {
+            onStartFlying.Raise();
             Macro.StartTimer(10, true);
         }
 

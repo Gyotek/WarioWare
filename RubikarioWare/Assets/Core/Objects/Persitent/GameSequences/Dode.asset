@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e175502a706747449665d24dc0c4f48, type: 3}
+  m_Name: Dode
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: sequenceType
+      Entry: 7
+      Data: 0|Game.Core.Theme, Assembly-CSharp
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+  sequence:
+  - {fileID: 11400000, guid: 2ab0c5002ae2e0f44936e44424aca8a3, type: 2}
+  - {fileID: 11400000, guid: c35688e72c0c384478ecdd9a321283b4, type: 2}
+  - {fileID: 11400000, guid: d61076dd25c7f94488c7e04b32ca58f5, type: 2}
+  - {fileID: 11400000, guid: 2612be44f96d855409839b43edc2aad5, type: 2}
+  - {fileID: 11400000, guid: cefe68bd818ab1d4abe1d43163b4f711, type: 2}
+  - {fileID: 11400000, guid: af294e5dca3299243bb94a87878e6909, type: 2}
+  transitions: {fileID: 11400000, guid: fa2e9b1d644de7c4f82b36d17e9cb17d, type: 2}
+  difficulty: 2
+  bpm96Threshold: 2
+  bpm120Threshold: 4
+  bpmAudioClips:
+  - {fileID: 8300000, guid: 4fd997885ecffb744801a8e7ed940fa8, type: 3}
+  - {fileID: 8300000, guid: a306e9507aa3f0643ac7291b3a04bb5c, type: 3}
+  - {fileID: 8300000, guid: 96a56682e8a8c954fad15ff1d0f2f17d, type: 3}
+  rival: 64
+  rivalNickname: The Worldbreaker
+  rivalThumbnail: {fileID: 21300000, guid: 50cdfd496af4f1c42a78b33191a480fd, type: 3}
+  isAccessible: 0
+  hasBeenPerfectlyCompleted: 0

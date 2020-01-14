@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UIDefault
-  m_Shader: {fileID: 4800000, guid: 5a691c68ef8acfb41aa8f389ed1cf87d, type: 3}
+  m_Shader: {fileID: 4800000, guid: c61f339ade7b3e849938050354b1c448, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
@@ -93,10 +93,11 @@ Material:
     - _UseUIAlphaClip: 0
     - _UseVector3: 0
     - _WriteMask: 255
+    - _ZTestMode: 2
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _OutlineColor: {r: 0.21856076, g: 0.22192445, b: 0.24517167, a: 1}
+    - _OutlineColor: {r: 0.21828407, g: 0.22164777, b: 0.24489498, a: 1}
     - _ShadowAngle3: {r: 1, g: -1, b: 0, a: 1}
     - _ShadowColor: {r: 1, g: 0, b: 0, a: 1}

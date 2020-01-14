@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e175502a706747449665d24dc0c4f48, type: 3}
+  m_Name: Theo
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: sequenceType
+      Entry: 7
+      Data: 0|Game.Core.Inputs, Assembly-CSharp
+    - Name: 
+      Entry: 3
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+  sequence:
+  - {fileID: 11400000, guid: 69148877615c89c44acbe8d1e8668dae, type: 2}
+  - {fileID: 11400000, guid: a453e3ed93ce92342ac6b404604c3226, type: 2}
+  - {fileID: 11400000, guid: 5d54f4f83b190c0429dec9e8e98c0cf1, type: 2}
+  - {fileID: 11400000, guid: 79840eba07f52e24891efdc9faa9003a, type: 2}
+  transitions: {fileID: 11400000, guid: 97a87eb9a0f8df940abb7c7491feffc8, type: 2}
+  difficulty: 1
+  bpm96Threshold: 1
+  bpm120Threshold: 3
+  bpmAudioClips:
+  - {fileID: 8300000, guid: 4fd997885ecffb744801a8e7ed940fa8, type: 3}
+  - {fileID: 8300000, guid: a306e9507aa3f0643ac7291b3a04bb5c, type: 3}
+  - {fileID: 8300000, guid: 96a56682e8a8c954fad15ff1d0f2f17d, type: 3}
+  rival: 2
+  rivalNickname: The Blackguard
+  rivalThumbnail: {fileID: 21300000, guid: 50cdfd496af4f1c42a78b33191a480fd, type: 3}
+  isAccessible: 1
+  hasBeenPerfectlyCompleted: 0

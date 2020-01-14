@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e175502a706747449665d24dc0c4f48, type: 3}
+  m_Name: PlaylistSequence
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: sequenceType
+      Entry: 6
+      Data: 
+  sequence: []
+  transitions: {fileID: 11400000, guid: f458004bbbca64a41abbc3b018932864, type: 2}
+  difficulty: 1
+  bpm96Threshold: 1
+  bpm120Threshold: 2
+  bpmAudioClips:
+  - {fileID: 8300000, guid: 4fd997885ecffb744801a8e7ed940fa8, type: 3}
+  - {fileID: 8300000, guid: a306e9507aa3f0643ac7291b3a04bb5c, type: 3}
+  - {fileID: 8300000, guid: 96a56682e8a8c954fad15ff1d0f2f17d, type: 3}
+  rival: 0
+  rivalNickname: Playlist
+  rivalThumbnail: {fileID: 0}
+  isAccessible: 0
+  hasBeenPerfectlyCompleted: 0

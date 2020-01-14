@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ec0312f6e2c4d8bad11953047f32652, type: 3}
+  m_Name: Rivals
+  m_EditorClassIdentifier: 
+  typeString: Game.Core.StorySequence
+  group:
+  - {fileID: 11400000, guid: 119e290c8a01eca44b1b2a6a93325063, type: 2}
+  - {fileID: 11400000, guid: 8a94e34af995d8e45b7e0c073bf878e8, type: 2}
+  - {fileID: 11400000, guid: c3a047990cf9c6b48b27acdac86a4132, type: 2}
+  - {fileID: 11400000, guid: 740b73660dd671b4b8f9622e5fef151a, type: 2}
+  - {fileID: 11400000, guid: b4a7f8bf349623b47875cba6bf264f9f, type: 2}
+  - {fileID: 11400000, guid: 85c54d274fe70a94b9c6a6f3a37b29ba, type: 2}
+  - {fileID: 11400000, guid: ac01c45f30d721e4b8ccd7743b53a4bd, type: 2}
+  - {fileID: 11400000, guid: fd64db9eda6964d47a168e8bac872341, type: 2}
+  - {fileID: 11400000, guid: e19ca44a6f6914c4ebb55e2f6b734dc6, type: 2}
+  - {fileID: 11400000, guid: 5340aba05abe49a408e663e373654bc8, type: 2}

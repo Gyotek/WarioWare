@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OutlineAndDropshadow
-  m_Shader: {fileID: 4800000, guid: bef3735b94c5a41c98be2cf46e0e0275, type: 3}
+  m_Shader: {fileID: 17, guid: 0000000000000000e000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0

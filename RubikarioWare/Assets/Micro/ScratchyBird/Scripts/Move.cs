@@ -8,11 +8,16 @@ namespace Game.ScratchyBird
     public class Move : MonoBehaviour
     {
 
-        private bool isMoving = true;
+        private bool isMoving = false;
         [SerializeField] private ScratchyController scratchy;
 
         public void OnGameStoped() =>
             isMoving = false;
+        
+        public void StartMoving()
+        {
+            isMoving = true;
+        }
 
         void Update()
         {
