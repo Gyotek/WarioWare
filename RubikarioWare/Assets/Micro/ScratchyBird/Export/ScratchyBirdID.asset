@@ -28,7 +28,7 @@ MonoBehaviour:
   scene:
     sceneAsset: {fileID: 102900000, guid: 5646d09e6763d6a40bceafe9ddf19507, type: 3}
     sceneName: ScratchyBirdScene
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: 90175f20995db8846b253e89e99df2b5, type: 3}
   designer:
   - Adrien
   - Dourgnon
@@ -36,6 +36,6 @@ MonoBehaviour:
   - Arthur
   - Herbreteau
   inputs: 1
-  rythmConstraints: 1
+  rythmConstraints: 0
   associatedRivals: 129
   theme: 2

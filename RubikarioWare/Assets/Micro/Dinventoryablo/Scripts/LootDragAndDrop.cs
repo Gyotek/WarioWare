@@ -28,24 +28,36 @@ namespace Game.Dinventoryablo
         private void Start()
         {
             colliders = GetComponents<Collider2D>();
-
             SavePos();
         }
 
         public void SavePos() =>
             savedPos = transform.position;
 
-        public void ResetPos() =>
+        public void ResetPos()
+        {
+            Dinventoryablo.AudioManager.instance.PlaySFX(Dinventoryablo.AudioManager.SFX.Nop);
             transform.position = savedPos;
+        }
 
-        void OnMouseEnter() =>
+        void OnMouseEnter()
+        {
             GetComponent<SpriteRenderer>().color = mouseOverColor;
+            DinventoryabloGameManager.instance.SetCurseur(2);
+        }
 
-        void OnMouseExit() =>
+        void OnMouseExit()
+        { 
             GetComponent<SpriteRenderer>().color = originalColor;
+            DinventoryabloGameManager.instance.SetCurseur(1);
+        }
 
         void OnMouseDown()
         {
+            if (DinventoryabloGameManager.instance.gameEnded)
+            {
+                return;
+            }
             Debug.Log("Item picked");
             OnItemPickedUp.Raise();
             for (int i = 0; i < colliders.Length; i ++)
@@ -54,18 +66,28 @@ namespace Game.Dinventoryablo
             }
 
             dragging = true;
+            Dinventoryablo.AudioManager.instance.PlaySFX(Dinventoryablo.AudioManager.SFX.Pick);
+            DinventoryabloGameManager.instance.SetCurseur(3);
         }
 
         private void OnTriggerStay2D(Collider2D collision)
         {
+            if (DinventoryabloGameManager.instance.gameWon)
+                return;
+            
             isStillInPlace = false;
             ResetPos();
         }
 
         void OnMouseUp()
         {
+            if (DinventoryabloGameManager.instance.gameWon)
+            {
+                return;
+            }
             Debug.Log("Item droped");
             dragging = false;
+            DinventoryabloGameManager.instance.SetCurseur(1);
 
             for (int i = 0; i < colliders.Length; i++)
             {
@@ -79,6 +101,7 @@ namespace Game.Dinventoryablo
             else
             {
                 transform.position = Inventory.GetComponent<InventoryManager>().WichSquareIsThis(transform.position);
+                Dinventoryablo.AudioManager.instance.PlaySFX(Dinventoryablo.AudioManager.SFX.Placed);
                 isStillInPlace = true;
                 StartCoroutine(IsStillInPlaceCoroutine());
             }
@@ -93,6 +116,8 @@ namespace Game.Dinventoryablo
 
         void Update()
         {
+            if (DinventoryabloGameManager.instance.gameEnded)
+                return;
             if (dragging)
             {
                 Vector3 pos = myCamera.ScreenToWorldPoint(Input.mousePosition);

@@ -12,7 +12,7 @@ namespace Game.ScratchyBird
 
         [SerializeField] private VoidEvent onStartFlying;
 
-        private bool gameEnded = false;
+        public bool gameEnded = false;
         [SerializeField] private string actionVerb;
         [SerializeField] private int actionVerbDuration;
 
@@ -40,13 +40,13 @@ namespace Game.ScratchyBird
 
         public void FinishGame(bool _win)
         {
+            gameEnded = true;
             if (!gameEnded)
                 StartCoroutine(FinishGameCoroutine(_win));
         }
 
         private IEnumerator FinishGameCoroutine(bool _win)
         {
-            gameEnded = true;
 
             if (_win)
                 Macro.Win();

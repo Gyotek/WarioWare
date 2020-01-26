@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -5547077140789651147
-    second: 59894_0
+    second: BackGroundDay
   - first:
       213: 2399390486727187584
-    second: 59894_1
+    second: BackgroundNight
   - first:
       213: 5094953158543103567
-    second: 59894_2
+    second: Foreground
   - first:
       213: 2161505781565058881
-    second: 59894_3
+    second: input
   - first:
       213: -3428839497975092502
     second: 59894_4
@@ -37,13 +37,13 @@ TextureImporter:
     second: 59894_10
   - first:
       213: 989595959218453280
-    second: 59894_11
+    second: Get Ready!
   - first:
       213: 2534821373861806787
     second: 59894_12
   - first:
       213: 9202183094701196051
-    second: 59894_13
+    second: GameOver
   - first:
       213: 8859269637336465548
     second: 59894_14
@@ -55,7 +55,7 @@ TextureImporter:
     second: 59894_16
   - first:
       213: 5646421804490874363
-    second: 59894_17
+    second: Title
   - first:
       213: 284023505456393108
     second: 59894_18
@@ -157,16 +157,16 @@ TextureImporter:
     second: 59894_50
   - first:
       213: 4964293208115799088
-    second: 59894_51
+    second: Tube1
   - first:
       213: 5479929395491337442
-    second: 59894_52
+    second: Tube2
   - first:
       213: 688364689170694913
-    second: 59894_53
+    second: Tube3
   - first:
       213: -4745291993750227300
-    second: 59894_54
+    second: Tube4
   - first:
       213: 3536394336367913635
     second: 59894_55
@@ -226,7 +226,7 @@ TextureImporter:
     second: 59894_73
   - first:
       213: -7084682769423167792
-    second: 59894_74
+    second: Scratchy
   - first:
       213: 8369813978604583032
     second: 59894_75
@@ -245,6 +245,9 @@ TextureImporter:
   - first:
       213: -7979104777257936175
     second: 59894_80
+  - first:
+      213: 8221010120279985380
+    second: ScoreBox
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -341,7 +344,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 59894_0
+      name: BackGroundDay
       rect:
         serializedVersion: 2
         x: 0
@@ -362,7 +365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_1
+      name: BackgroundNight
       rect:
         serializedVersion: 2
         x: 146
@@ -383,7 +386,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_2
+      name: Foreground
       rect:
         serializedVersion: 2
         x: 292
@@ -404,33 +407,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_10
+      name: Get Ready!
       rect:
         serializedVersion: 2
         x: 295
-        y: 432
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d915c11db8b3a4a906b7f0b1eab744
-      internalID: 8642480055585984542
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 59894_11
-      rect:
-        serializedVersion: 2
-        x: 329
         y: 428
-        width: 58
+        width: 92
         height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -446,33 +428,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_12
+      name: GameOver
       rect:
         serializedVersion: 2
         x: 395
         y: 432
-        width: 49
-        height: 21
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d03be3b47ecbd68439c5272d9b5787db
-      internalID: 2534821373861806787
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 59894_13
-      rect:
-        serializedVersion: 2
-        x: 449
-        y: 432
-        width: 42
+        width: 96
         height: 21
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -488,7 +449,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_17
+      name: Title
       rect:
         serializedVersion: 2
         x: 351
@@ -509,7 +470,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_51
+      name: Tube1
       rect:
         serializedVersion: 2
         x: 0
@@ -530,7 +491,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_52
+      name: Tube2
       rect:
         serializedVersion: 2
         x: 28
@@ -551,7 +512,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_53
+      name: Tube3
       rect:
         serializedVersion: 2
         x: 56
@@ -572,7 +533,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_54
+      name: Tube4
       rect:
         serializedVersion: 2
         x: 84
@@ -593,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 59894_74
+      name: Scratchy
       rect:
         serializedVersion: 2
         x: 3
@@ -609,6 +570,48 @@ TextureImporter:
       bones: []
       spriteID: ec0268a903c28e845b8e4e1ee1e01c13
       internalID: -7084682769423167792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: input
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 392
+        width: 60
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c2628000432d949b8c4c0b345afdc0
+      internalID: 2161505781565058881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ScoreBox
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 196
+        width: 113
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6946721801cf2b84f954e1167ad05b6e
+      internalID: 8221010120279985380
       vertices: []
       indices: 
       edges: []

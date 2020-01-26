@@ -29,7 +29,7 @@ MonoBehaviour:
   scene:
     sceneAsset: {fileID: 102900000, guid: 412990d1657ffec46839402e738375b9, type: 3}
     sceneName: Dinventoryablo
-  thumbnail: {fileID: 0}
+  thumbnail: {fileID: 21300000, guid: 6eeae75af772dc746a3c0cc7989ce74e, type: 3}
   designer:
   - Alexandre
   - Courtin

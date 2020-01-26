@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6423078153016223116
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6423078153016223113}
+  - component: {fileID: 6423078153016223119}
+  - component: {fileID: 2009547129}
+  m_Layer: 0
+  m_Name: Audio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6423078153016223113
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423078153016223116}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6423078153016223119
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423078153016223116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c7f6feb036be5048abce0d7e668e734, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroupMusic: {fileID: -4245998430647191170, guid: 120681a10a40d4e4487ff6857ecc1cc4,
+    type: 2}
+  mixerGroupSound: {fileID: -4749448232793455569, guid: 120681a10a40d4e4487ff6857ecc1cc4,
+    type: 2}
+  musics:
+  - name: Music
+    clip: {fileID: 8300000, guid: bb592a9e0d1d00047af4bd1fffe3356a, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: IdlePresence
+    clip: {fileID: 8300000, guid: 67810d8f38fff514eb0c5ca14c1d5edd, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: CachePresence
+    clip: {fileID: 8300000, guid: 45c6f6a1219bbbf4f8e6352f71332dab, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  sounds:
+  - name: NouvelleVague
+    clip: {fileID: 8300000, guid: 2e0e42f321fc99a4096a1fdc8f242854, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Dispiration
+    clip: {fileID: 8300000, guid: c5bf159bdbc0a78438901604f81c727e, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Death
+    clip: {fileID: 8300000, guid: d80698243bff2574586e69c6f231f47f, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: StunSound
+    clip: {fileID: 8300000, guid: bea7a6522152ecb43bdf42ef2ba4d783, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Laser
+    clip: {fileID: 8300000, guid: e6eb188ffd1fb82438575a59a9166345, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 1
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  apparitionSounds:
+  - name: Apparition1
+    clip: {fileID: 8300000, guid: f4194ef94af75df41bd84b382ec2850d, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Apparition2
+    clip: {fileID: 8300000, guid: 0ece3c5cfc6161b4d9551aadec77d2b1, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Apparition3
+    clip: {fileID: 8300000, guid: c3e61cb52024cf947962c03d4ba4ff4e, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Apparition4
+    clip: {fileID: 8300000, guid: edab5ad1d7c93d44aba13d7cefd6449d, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: Apparition5
+    clip: {fileID: 8300000, guid: 305a80c6023c79948af64dcf172117a8, type: 3}
+    volume: 0.75
+    volumeVariance: 0.1
+    pitch: 1
+    pitchVariance: 0.1
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+--- !u!81 &2009547129
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6423078153016223116}
+  m_Enabled: 0

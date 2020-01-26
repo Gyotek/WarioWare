@@ -10,7 +10,7 @@ namespace Game.ScratchyBird
         private Rigidbody2D rb;
         [SerializeField] private GameObject bloodSprite;
         [SerializeField] private ParticleSystem bloodParticles;
-
+        [SerializeField] private ParticleSystem multicolorBloodParticles;
         [SerializeField] private VoidEvent onImpale;
         [SerializeField] private VoidEvent onImpact;
 
@@ -27,7 +27,6 @@ namespace Game.ScratchyBird
         // Update is called once per frame
         void Update()
         {
-           Debug.Log(rb.velocity.y);
 
             transform.rotation = Quaternion.Lerp(transform.rotation, Quaternion.Euler(0, 0, rb.velocity.y *10), 0.5f);
             /*
@@ -56,13 +55,13 @@ namespace Game.ScratchyBird
             {
                 speed = speed * 1.75f;
                 rb.gravityScale = 1.2f;
-                rb.velocity = rb.velocity * 2f;
+                rb.velocity = rb.velocity * 2.5f;
             }
             else if (Macro.BPM == 160)
             {
                 speed = speed * 2.5f;
                 rb.gravityScale = 1.4f;
-                rb.velocity = rb.velocity * 2.5f;
+                rb.velocity = rb.velocity * 3f;
             }
         }
 
@@ -74,13 +73,14 @@ namespace Game.ScratchyBird
         private void Fly()
         {
             if (Input.GetMouseButtonDown(0))
+            {
                 rb.velocity = Vector2.up * velocity;
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.WingFlap);
+            }
         }
          private void Stop()
         {
             rb.simulated = false;
-            bloodParticles.Play();
-            bloodSprite.SetActive(true);
             velocity = 0;
             speed = 0;
         }
@@ -90,9 +90,34 @@ namespace Game.ScratchyBird
             Stop();
 
             if (collision.gameObject.GetComponent<Spikes>())
+            {
+                multicolorBloodParticles.Play();
+                bloodSprite.SetActive(true);
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.Loose);
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.Win);
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.Applauses);
                 onImpale.Raise();
-            else
+            }
+            else if (collision.gameObject.GetComponent<Tube>())
+            {
+                bloodParticles.Play();
+                bloodSprite.SetActive(true);
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.LooseTube);
                 onImpact.Raise();
+            }
+            else if (collision.gameObject.GetComponent<End>())
+            {
+                onImpact.Raise();
+            }
+            else
+            {
+                onImpact.Raise();
+                bloodParticles.Play();
+                ScratchyBird.AudioManager.instance.PlaySFX(AudioManager.SFX.Loose);
+                bloodSprite.SetActive(true);
+
+            }
+
 
         }
     }

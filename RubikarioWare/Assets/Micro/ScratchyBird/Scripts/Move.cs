@@ -21,7 +21,7 @@ namespace Game.ScratchyBird
 
         void Update()
         {
-            if(isMoving)
+            if(isMoving && !ScratchyBirdGameManager.instance.gameEnded)
                 transform.position -= Vector3.right * scratchy.speed * Time.deltaTime;
 
         }
